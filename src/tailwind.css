@@ -1,0 +1,33 @@
+/* =========================================================
+   Entrada do Tailwind CSS (v4) — gera assets/tailwind.css
+   Comandos: npm run build:css  |  npm run watch:css
+
+   Sem o "preflight" (reset do Tailwind) de propósito: assim, ao ligar
+   assets/tailwind.css no index.html, o visual atual do site não muda.
+   As classes do Tailwind (ex.: mt-4, text-coral) passam a funcionar
+   onde você usar. Regras do styles.css continuam com prioridade.
+   ========================================================= */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Arquivos onde o Tailwind procura classes */
+@source "../index.html";
+@source "../script.js";
+@source "./**/*.ts";
+
+/* Mesmas cores e fontes do styles.css */
+@theme {
+  --color-coral: #ff6b8b;
+  --color-coral-dark: #e84a6f;
+  --color-sun: #ffc93c;
+  --color-sun-dark: #f5a623;
+  --color-sky: #4fb6f0;
+  --color-mint: #3fcf9a;
+  --color-lavender: #a78bfa;
+  --color-ink: #3a2d5c;
+  --color-ink-soft: #6b5f86;
+  --color-cream: #fff8ef;
+  --font-baloo: "Baloo 2", system-ui, sans-serif;
+  --font-nunito: "Nunito", system-ui, sans-serif;
+}

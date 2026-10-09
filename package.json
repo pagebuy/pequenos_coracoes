@@ -1,0 +1,18 @@
+{
+  "name": "pequenos-coracoes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page do Kit Emoções e Valores à Luz da Bíblia",
+  "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File serve.ps1",
+    "build:css": "tailwindcss -i src/tailwind.css -o assets/tailwind.css --minify",
+    "watch:css": "tailwindcss -i src/tailwind.css -o assets/tailwind.css --watch",
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "npm run typecheck && npm run build:css"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  }
+}
